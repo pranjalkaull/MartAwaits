@@ -1,0 +1,245 @@
+export const mockMarts = [
+  {
+    id: '1',
+    name: 'FreshMart Downtown',
+    address: '123 Main St, Downtown',
+    distance: '0.5 km',
+    rating: 4.5,
+    latitude: 40.7128,
+    longitude: -74.0060,
+    image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=500',
+    deliveryTime: '15-30 min',
+    categories: ['Groceries', 'Fresh Produce', 'Dairy']
+  },
+  {
+    id: '2',
+    name: 'QuickStop Express',
+    address: '456 Oak Ave, Midtown',
+    distance: '1.2 km',
+    rating: 4.2,
+    latitude: 40.7589,
+    longitude: -73.9851,
+    image: 'https://images.pexels.com/photos/2292837/pexels-photo-2292837.jpeg?auto=compress&cs=tinysrgb&w=500',
+    deliveryTime: '10-25 min',
+    categories: ['Snacks', 'Beverages', 'Essentials']
+  },
+  {
+    id: '3',
+    name: 'Organic Valley',
+    address: '789 Green Blvd, Uptown',
+    distance: '2.1 km',
+    rating: 4.8,
+    latitude: 40.7831,
+    longitude: -73.9712,
+    image: 'https://images.pexels.com/photos/1656663/pexels-photo-1656663.jpeg?auto=compress&cs=tinysrgb&w=500',
+    deliveryTime: '20-35 min',
+    categories: ['Organic', 'Health Food', 'Supplements']
+  },
+  {
+    id: '4',
+    name: 'Corner Grocery',
+    address: '321 Elm St, Eastside',
+    distance: '0.8 km',
+    rating: 4.3,
+    latitude: 40.7282,
+    longitude: -73.9942,
+    image: 'https://images.pexels.com/photos/1005638/pexels-photo-1005638.jpeg?auto=compress&cs=tinysrgb&w=500',
+    deliveryTime: '12-25 min',
+    categories: ['Groceries', 'Snacks', 'Beverages']
+  },
+  {
+    id: '5',
+    name: 'Metro Market',
+    address: '567 Broadway, Central',
+    distance: '1.5 km',
+    rating: 4.6,
+    latitude: 40.7505,
+    longitude: -73.9934,
+    image: 'https://images.pexels.com/photos/2292919/pexels-photo-2292919.jpeg?auto=compress&cs=tinysrgb&w=500',
+    deliveryTime: '18-30 min',
+    categories: ['Groceries', 'Fresh Produce', 'Organic']
+  }
+];
+
+export const mockProducts = {
+  '1': [
+    {
+      id: 'p1',
+      name: 'Fresh Bananas',
+      price: 2.99,
+      image: 'https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Fresh Produce',
+      description: 'Organic bananas, perfectly ripe'
+    },
+    {
+      id: 'p2',
+      name: 'Whole Wheat Bread',
+      price: 3.49,
+      image: 'https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Bakery',
+      description: 'Fresh baked whole wheat bread'
+    },
+    {
+      id: 'p3',
+      name: 'Organic Milk',
+      price: 4.99,
+      image: 'https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Dairy',
+      description: 'Fresh organic milk, 1 liter'
+    },
+    {
+      id: 'p4',
+      name: 'Free Range Eggs',
+      price: 5.99,
+      image: 'https://images.pexels.com/photos/162712/egg-white-food-protein-162712.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Dairy',
+      description: 'Farm fresh free range eggs, dozen'
+    }
+  ],
+  '2': [
+    {
+      id: 'p5',
+      name: 'Potato Chips',
+      price: 1.99,
+      image: 'https://images.pexels.com/photos/568373/pexels-photo-568373.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Snacks',
+      description: 'Crispy salted potato chips'
+    },
+    {
+      id: 'p6',
+      name: 'Energy Drink',
+      price: 2.49,
+      image: 'https://images.pexels.com/photos/4198102/pexels-photo-4198102.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Beverages',
+      description: 'Refreshing energy drink'
+    },
+    {
+      id: 'p7',
+      name: 'Chocolate Bar',
+      price: 1.79,
+      image: 'https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Snacks',
+      description: 'Rich dark chocolate bar'
+    }
+  ],
+  '3': [
+    {
+      id: 'p8',
+      name: 'Organic Quinoa',
+      price: 8.99,
+      image: 'https://images.pexels.com/photos/1321942/pexels-photo-1321942.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Organic',
+      description: 'Premium organic quinoa, 500g'
+    },
+    {
+      id: 'p9',
+      name: 'Almond Butter',
+      price: 12.99,
+      image: 'https://images.pexels.com/photos/1295572/pexels-photo-1295572.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Health Food',
+      description: 'Natural almond butter, no added sugar'
+    },
+    {
+      id: 'p10',
+      name: 'Vitamin D Supplement',
+      price: 15.99,
+      image: 'https://images.pexels.com/photos/3652097/pexels-photo-3652097.jpeg?auto=compress&cs=tinysrgb&w=300',
+      category: 'Supplements',
+      description: 'High-quality vitamin D3 supplement'
+    }
+  ]
+};
+
+export const mockMartUsers = [
+  {
+    id: '1',
+    email: 'freshmart@example.com',
+    password: 'password123',
+    martName: 'FreshMart Downtown',
+    ownerName: 'John Smith',
+    phone: '+1-555-0101',
+    address: '123 Main St, Downtown',
+    isVerified: true,
+    createdAt: new Date('2024-01-15')
+  },
+  {
+    id: '2',
+    email: 'quickstop@example.com',
+    password: 'password123',
+    martName: 'QuickStop Express',
+    ownerName: 'Sarah Johnson',
+    phone: '+1-555-0102',
+    address: '456 Oak Ave, Midtown',
+    isVerified: true,
+    createdAt: new Date('2024-01-20')
+  },
+  {
+    id: '3',
+    email: 'organic@example.com',
+    password: 'password123',
+    martName: 'Organic Valley',
+    ownerName: 'Mike Davis',
+    phone: '+1-555-0103',
+    address: '789 Green Blvd, Uptown',
+    isVerified: true,
+    createdAt: new Date('2024-02-01')
+  }
+];
+
+export const mockMartOrders = {
+  '1': [
+    {
+      id: '1001',
+      customerId: 'c1',
+      customerName: 'John Doe',
+      customerPhone: '+1-555-1001',
+      customerAddress: '123 Customer St, City',
+      items: [
+        { id: 'p1', name: 'Fresh Bananas', price: 2.99, quantity: 2 },
+        { id: 'p2', name: 'Whole Wheat Bread', price: 3.49, quantity: 1 }
+      ],
+      total: 9.47,
+      status: 'pending',
+      paymentMethod: 'upi',
+      isPaid: true,
+      createdAt: new Date(Date.now() - 10 * 60 * 1000), // 10 minutes ago
+      notes: 'Please pack carefully'
+    },
+    {
+      id: '1002',
+      customerId: 'c2',
+      customerName: 'Jane Smith',
+      customerPhone: '+1-555-1002',
+      customerAddress: '456 Customer Ave, City',
+      items: [
+        { id: 'p3', name: 'Organic Milk', price: 4.99, quantity: 1 },
+        { id: 'p4', name: 'Free Range Eggs', price: 5.99, quantity: 1 }
+      ],
+      total: 10.98,
+      status: 'packed',
+      paymentMethod: 'card',
+      isPaid: true,
+      createdAt: new Date(Date.now() - 25 * 60 * 1000), // 25 minutes ago
+      notes: ''
+    }
+  ],
+  '2': [
+    {
+      id: '2001',
+      customerId: 'c3',
+      customerName: 'Mike Johnson',
+      customerPhone: '+1-555-2001',
+      customerAddress: '789 Customer Blvd, City',
+      items: [
+        { id: 'p5', name: 'Potato Chips', price: 1.99, quantity: 3 },
+        { id: 'p6', name: 'Energy Drink', price: 2.49, quantity: 2 }
+      ],
+      total: 10.95,
+      status: 'delivered',
+      paymentMethod: 'cod',
+      isPaid: false,
+      createdAt: new Date(Date.now() - 60 * 60 * 1000), // 1 hour ago
+      notes: 'Call before delivery'
+    }
+  ]
+};
