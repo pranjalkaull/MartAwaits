@@ -1,20 +1,20 @@
 export const mockMarts = [
   {
     id: '1',
-    name: 'FreshMart Downtown',
-    address: '123 Main St, Downtown',
+    name: 'Kalesh FreshMart Kolar',
+    address: '123 Main BeemaKunj, Om Complex, Kolar Road Bhopal',
     distance: '0.5 km',
     rating: 4.5,
     latitude: 40.7128,
     longitude: -74.0060,
     image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=500',
     deliveryTime: '15-30 min',
-    categories: ['Groceries', 'Fresh Produce', 'Dairy']
+    categories: ['Groceries', 'Fresh Produce', 'Dairy', 'Electronics', 'More']
   },
   {
     id: '2',
-    name: 'QuickStop Express',
-    address: '456 Oak Ave, Midtown',
+    name: 'QuickStop Mp Nagar ',
+    address: '456 Near Danik Bhaskar, Mp Nagar Bhopal ',
     distance: '1.2 km',
     rating: 4.2,
     latitude: 40.7589,
@@ -25,8 +25,8 @@ export const mockMarts = [
   },
   {
     id: '3',
-    name: 'Organic Valley',
-    address: '789 Green Blvd, Uptown',
+    name: 'Organic Valley Misrod ',
+    address: '789 Street Front of Coral Woods, Misrod Bhopal',
     distance: '2.1 km',
     rating: 4.8,
     latitude: 40.7831,
@@ -37,8 +37,8 @@ export const mockMarts = [
   },
   {
     id: '4',
-    name: 'Corner Grocery',
-    address: '321 Elm St, Eastside',
+    name: 'Corner Grocery Katar Hills',
+    address: 'Barai Road, Katara Hills, Bhopal',
     distance: '0.8 km',
     rating: 4.3,
     latitude: 40.7282,
@@ -49,8 +49,8 @@ export const mockMarts = [
   },
   {
     id: '5',
-    name: 'Metro Market',
-    address: '567 Broadway, Central',
+    name: 'Metro Market DB Mall ',
+    address: '567SP DB Mall, Bhopal',
     distance: '1.5 km',
     rating: 4.6,
     latitude: 40.7505,
@@ -63,10 +63,10 @@ export const mockMarts = [
 
 export const mockProducts = {
   '1': [
-    {
       id: 'p1',
-      name: 'Fresh Bananas',
-      price: 2.99,
+    {
+      price: ₹60 ,
+      name: 'Fresh Bananas 12 PCS',
       image: 'https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Fresh Produce',
       description: 'Organic bananas, perfectly ripe'
@@ -74,23 +74,23 @@ export const mockProducts = {
     {
       id: 'p2',
       name: 'Whole Wheat Bread',
-      price: 3.49,
+      price: ₹ 45,
       image: 'https://images.pexels.com/photos/209206/pexels-photo-209206.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Bakery',
       description: 'Fresh baked whole wheat bread'
     },
     {
       id: 'p3',
-      name: 'Organic Milk',
-      price: 4.99,
+      name: 'Organic Milk 1 LTR',
+      price: ₹ 75,
       image: 'https://images.pexels.com/photos/248412/pexels-photo-248412.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Dairy',
       description: 'Fresh organic milk, 1 liter'
     },
     {
       id: 'p4',
-      name: 'Free Range Eggs',
-      price: 5.99,
+      name: 'Free Range Eggs 12 Pcs',
+      price: ₹ 90,
       image: 'https://images.pexels.com/photos/162712/egg-white-food-protein-162712.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Dairy',
       description: 'Farm fresh free range eggs, dozen'
@@ -100,7 +100,7 @@ export const mockProducts = {
     {
       id: 'p5',
       name: 'Potato Chips',
-      price: 1.99,
+      price: ₹ 45,
       image: 'https://images.pexels.com/photos/568373/pexels-photo-568373.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Snacks',
       description: 'Crispy salted potato chips'
@@ -108,7 +108,7 @@ export const mockProducts = {
     {
       id: 'p6',
       name: 'Energy Drink',
-      price: 2.49,
+      price: ₹ 180,
       image: 'https://images.pexels.com/photos/4198102/pexels-photo-4198102.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Beverages',
       description: 'Refreshing energy drink'
@@ -116,7 +116,7 @@ export const mockProducts = {
     {
       id: 'p7',
       name: 'Chocolate Bar',
-      price: 1.79,
+      price: ₹ 60,
       image: 'https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Snacks',
       description: 'Rich dark chocolate bar'
@@ -126,15 +126,15 @@ export const mockProducts = {
     {
       id: 'p8',
       name: 'Organic Quinoa',
-      price: 8.99,
+      price:₹ 75,
       image: 'https://images.pexels.com/photos/1321942/pexels-photo-1321942.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Organic',
       description: 'Premium organic quinoa, 500g'
     },
     {
       id: 'p9',
-      name: 'Almond Butter',
-      price: 12.99,
+      name: 'Almond Butter 250gm',
+      price: ₹ 85,
       image: 'https://images.pexels.com/photos/1295572/pexels-photo-1295572.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Health Food',
       description: 'Natural almond butter, no added sugar'
@@ -142,7 +142,7 @@ export const mockProducts = {
     {
       id: 'p10',
       name: 'Vitamin D Supplement',
-      price: 15.99,
+      price: ₹ 1200,
       image: 'https://images.pexels.com/photos/3652097/pexels-photo-3652097.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Supplements',
       description: 'High-quality vitamin D3 supplement'
