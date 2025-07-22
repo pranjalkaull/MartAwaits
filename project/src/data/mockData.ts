@@ -65,7 +65,7 @@ export const mockProducts = {
   '1': [
       id: 'p1',
     {
-      price: ₹60 ,
+      price: ₹ 60 ,
       name: 'Fresh Bananas 12 PCS',
       image: 'https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&w=300',
       category: 'Fresh Produce',
