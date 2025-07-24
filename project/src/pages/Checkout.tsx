@@ -54,7 +54,7 @@ const Checkout: React.FC = () => {
             {state.items.map((item) => (
               <div key={item.id} className="flex justify-between text-sm">
                 <span className="text-gray-600">{item.name} x{item.quantity}</span>
-                <span className="font-medium">${(item.price * item.quantity).toFixed(2)}</span>
+                <span className="font-medium">₹{(item.price * item.quantity).toFixed(2)}</span>
               </div>
             ))}
           </div>
@@ -62,19 +62,19 @@ const Checkout: React.FC = () => {
           <div className="border-t pt-2 space-y-1">
             <div className="flex justify-between text-sm">
               <span className="text-gray-600">Subtotal</span>
-              <span>${state.total.toFixed(2)}</span>
+              <span>₹{state.total.toFixed(2)}</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-gray-600">Delivery Fee</span>
-              <span>$2.99</span>
+              <span>₹2.99</span>
             </div>
             <div className="flex justify-between text-sm">
               <span className="text-gray-600">Tax</span>
-              <span>${(state.total * 0.08).toFixed(2)}</span>
+              <span>₹{(state.total * 0.08).toFixed(2)}</span>
             </div>
             <div className="flex justify-between font-semibold text-lg pt-2 border-t">
               <span>Total</span>
-              <span className="text-blue-600">${total.toFixed(2)}</span>
+              <span className="text-blue-600">₹{total.toFixed(2)}</span>
             </div>
           </div>
         </div>

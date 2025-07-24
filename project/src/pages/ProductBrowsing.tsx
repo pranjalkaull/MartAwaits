@@ -93,7 +93,7 @@ const ProductBrowsing: React.FC = () => {
                 
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-sm text-gray-500">{product.category}</span>
-                  <span className="text-lg font-bold text-blue-600">${product.price}</span>
+                  <span className="text-lg font-bold text-blue-600">₹{product.price}</span>
                 </div>
                 
                 <button

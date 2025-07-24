@@ -56,7 +56,7 @@ const OrderStatus: React.FC = () => {
               <p className="text-gray-600">{order.createdAt.toLocaleDateString()}</p>
             </div>
             <div className="text-right">
-              <p className="text-lg font-semibold text-blue-600">${order.total.toFixed(2)}</p>
+              <p className="text-lg font-semibold text-blue-600">₹{order.total.toFixed(2)}</p>
               <p className={`text-sm ${order.isPaid ? 'text-green-600' : 'text-red-600'}`}>
                 {order.isPaid ? 'Paid' : 'Payment Pending'}
               </p>
@@ -171,7 +171,7 @@ const OrderStatus: React.FC = () => {
                   <h4 className="font-medium text-gray-900">{item.name}</h4>
                   <p className="text-sm text-gray-600">Qty: {item.quantity}</p>
                 </div>
-                <span className="font-medium">${(item.price * item.quantity).toFixed(2)}</span>
+                <span className="font-medium">₹{(item.price * item.quantity).toFixed(2)}</span>
               </div>
             ))}
           </div>

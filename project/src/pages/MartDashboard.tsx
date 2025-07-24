@@ -90,7 +90,7 @@ const MartDashboard: React.FC = () => {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-gray-600">Today's Revenue</p>
-              <p className="text-2xl font-bold text-gray-900">${stats.todayRevenue}</p>
+              <p className="text-2xl font-bold text-gray-900">₹{stats.todayRevenue}</p>
             </div>
             <div className="bg-green-100 p-3 rounded-full">
               <DollarSign className="h-6 w-6 text-green-600" />
@@ -102,7 +102,7 @@ const MartDashboard: React.FC = () => {
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm text-gray-600">Monthly Revenue</p>
-              <p className="text-2xl font-bold text-gray-900">${stats.monthlyRevenue}</p>
+              <p className="text-2xl font-bold text-gray-900">₹{stats.monthlyRevenue}</p>
             </div>
             <div className="bg-purple-100 p-3 rounded-full">
               <TrendingUp className="h-6 w-6 text-purple-600" />
@@ -134,7 +134,7 @@ const MartDashboard: React.FC = () => {
                   <td className="px-6 py-4 text-sm font-medium text-gray-900">#{order.id}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{order.customer}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{order.items}</td>
-                  <td className="px-6 py-4 text-sm text-gray-900 font-medium">${order.total}</td>
+                  <td className="px-6 py-4 text-sm text-gray-900 font-medium">₹{order.total}</td>
                   <td className="px-6 py-4">
                     <span className={`px-2 py-1 text-xs font-medium rounded-full ${getStatusColor(order.status)}`}>
                       {order.status.replace('_', ' ')}
@@ -176,7 +176,7 @@ const MartDashboard: React.FC = () => {
               {mockProducts.map((product) => (
                 <tr key={product.id} className="hover:bg-gray-50">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900">{product.name}</td>
-                  <td className="px-6 py-4 text-sm text-gray-900">${product.price}</td>
+                  <td className="px-6 py-4 text-sm text-gray-900">₹{product.price}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{product.stock}</td>
                   <td className="px-6 py-4">
                     <span className={`px-2 py-1 text-xs font-medium rounded-full ${getStatusColor(product.status)}`}>
@@ -228,7 +228,7 @@ const MartDashboard: React.FC = () => {
                   <td className="px-6 py-4 text-sm font-medium text-gray-900">#{order.id}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{order.customer}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{order.items}</td>
-                  <td className="px-6 py-4 text-sm text-gray-900 font-medium">${order.total}</td>
+                  <td className="px-6 py-4 text-sm text-gray-900 font-medium">₹{order.total}</td>
                   <td className="px-6 py-4">
                     <select 
                       defaultValue={order.status}

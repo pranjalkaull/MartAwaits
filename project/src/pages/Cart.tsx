@@ -68,7 +68,7 @@ const Cart: React.FC = () => {
                 
                 <div className="flex-1">
                   <h3 className="text-lg font-medium text-gray-900">{item.name}</h3>
-                  <p className="text-blue-600 font-semibold">${item.price}</p>
+                  <p className="text-blue-600 font-semibold">₹{item.price}</p>
                 </div>
                 
                 <div className="flex items-center space-x-2">
@@ -107,21 +107,21 @@ const Cart: React.FC = () => {
           <div className="space-y-2 mb-4">
             <div className="flex justify-between">
               <span className="text-gray-600">Subtotal</span>
-              <span className="font-medium">${state.total.toFixed(2)}</span>
+              <span className="font-medium">₹{state.total.toFixed(2)}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-gray-600">Delivery Fee</span>
-              <span className="font-medium">$2.99</span>
+              <span className="font-medium">₹2.99</span>
             </div>
             <div className="flex justify-between">
               <span className="text-gray-600">Tax</span>
-              <span className="font-medium">${(state.total * 0.08).toFixed(2)}</span>
+              <span className="font-medium">₹{(state.total * 0.08).toFixed(2)}</span>
             </div>
             <div className="border-t pt-2">
               <div className="flex justify-between">
                 <span className="text-lg font-semibold">Total</span>
                 <span className="text-lg font-semibold text-blue-600">
-                  ${(state.total + 2.99 + state.total * 0.08).toFixed(2)}
+                  ₹{(state.total + 2.99 + state.total * 0.08).toFixed(2)}
                 </span>
               </div>
             </div>

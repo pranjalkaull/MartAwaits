@@ -120,7 +120,7 @@ const Receipt: React.FC = () => {
                   <h4 className="font-medium text-gray-900">{item.name}</h4>
                   <p className="text-sm text-gray-600">Quantity: {item.quantity}</p>
                 </div>
-                <span className="font-medium">${(item.price * item.quantity).toFixed(2)}</span>
+                <span className="font-medium">₹{(item.price * item.quantity).toFixed(2)}</span>
               </div>
             ))}
           </div>
@@ -128,7 +128,7 @@ const Receipt: React.FC = () => {
           <div className="border-t mt-4 pt-4">
             <div className="flex justify-between text-lg font-semibold">
               <span>Total</span>
-              <span className="text-blue-600">${order.total.toFixed(2)}</span>
+              <span className="text-blue-600">₹{order.total.toFixed(2)}</span>
             </div>
           </div>
         </div>
