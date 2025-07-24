@@ -128,6 +128,18 @@ const Home: React.FC = () => {
               <Store className="mr-2 h-5 w-5" />
               Mart Official Access
             </Link>
+            <Link
+              to="/customer-login"
+              className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
+            >
+              Customer Login
+            </Link>
+            <Link
+              to="/customer-signup"
+              className="inline-flex items-center px-8 py-4 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 transform hover:scale-105 transition-all duration-200 shadow-lg"
+            >
+              Customer Sign Up
+            </Link>
           </div>
         </div>
       </div>

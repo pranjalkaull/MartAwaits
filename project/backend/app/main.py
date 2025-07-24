@@ -10,6 +10,8 @@ from typing import List, Optional
 import jwt
 import os
 from datetime import datetime, timedelta
+from passlib.context import CryptContext
+from pydantic import BaseModel
 
 app = FastAPI(title="E-commerce API", version="1.0.0")
 
@@ -57,6 +59,16 @@ class Order:
         self.payment_method = payment_method
         self.status = "pending"
         self.created_at = datetime.utcnow()
+
+class CustomerRegisterRequest(BaseModel):
+    name: str
+    email: str
+    password: str
+    phone: str
+
+class CustomerLoginRequest(BaseModel):
+    email: str
+    password: str
 
 # Routes
 @app.get("/")
@@ -129,6 +141,30 @@ async def get_order(order_id: str):
         }
     except:
         raise HTTPException(status_code=404, detail="Order not found")
+
+@app.post("/api/customers/register")
+async def customer_register(data: CustomerRegisterRequest):
+    existing = await db.customers.find_one({"email": data.email})
+    if existing:
+        raise HTTPException(status_code=400, detail="Email already registered")
+    hashed_password = pwd_context.hash(data.password)
+    customer = {
+        "name": data.name,
+        "email": data.email,
+        "password": hashed_password,
+        "phone": data.phone,
+        "created_at": datetime.utcnow()
+    }
+    result = await db.customers.insert_one(customer)
+    return {"id": str(result.inserted_id), "message": "Customer registered successfully"}
+
+@app.post("/api/customers/login")
+async def customer_login(data: CustomerLoginRequest):
+    customer = await db.customers.find_one({"email": data.email})
+    if not customer or not pwd_context.verify(data.password, customer["password"]):
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+    token = jwt.encode({"sub": str(customer["_id"]), "exp": datetime.utcnow() + timedelta(days=1)}, JWT_SECRET, algorithm="HS256")
+    return {"token": token, "user": {"id": str(customer["_id"]), "email": customer["email"], "name": customer["name"]}}
 
 # Initialize sample data
 @app.on_event("startup")
